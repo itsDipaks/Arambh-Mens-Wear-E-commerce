@@ -4,6 +4,6 @@ const { SignupController } = require("../../Controller/SignupController/Signup.C
 
 const SignupRouter=Router()
 
-SignupRouter.get("/",SignupController.getdata)
-
+SignupRouter.get("/getuser",SignupController.getdata)
+SignupRouter.post("/addUser",SignupController.Adduser)
 module.exports={SignupRouter}

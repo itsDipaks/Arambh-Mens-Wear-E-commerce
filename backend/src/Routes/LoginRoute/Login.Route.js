@@ -4,8 +4,8 @@ const { LoginController } = require("../../Controller/LoginController/Login.Cont
 const LoginRouter=Router()
 
 
-LoginRouter.get("/",LoginController.getdata)
-
+LoginRouter.get("/getlogin",LoginController.getdata)
+LoginRouter.post("/isuser",LoginController.checkuser)
 
 
 module.exports={LoginRouter}

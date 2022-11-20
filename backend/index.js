@@ -1,6 +1,5 @@
 const express=require("express")
 const { connection } = require("./src/Config/db")
-const { SignupModel } = require("./src/Models/Signup.Model")
 const { LoginRouter } = require("./src/Routes/LoginRoute/Login.Route")
 const { SignupRouter } = require("./src/Routes/SignupRoute/Signup.Route")
 require("dotenv").config()
