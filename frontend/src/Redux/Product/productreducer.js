@@ -1,10 +1,10 @@
 const initialstate={
     isloading:false,
-   token:"",
-    iserror:false
+    iserror:false,
+    data:[]
 }
 
-const AuthReducer=(state=initialstate,{type,payload})=>{
+const ProductReducer=(state=initialstate,{type,payload})=>{
     switch(type){
         default:{
             return state
@@ -12,4 +12,4 @@ const AuthReducer=(state=initialstate,{type,payload})=>{
     }
 }
 
-export default AuthReducer;
+export default ProductReducer
