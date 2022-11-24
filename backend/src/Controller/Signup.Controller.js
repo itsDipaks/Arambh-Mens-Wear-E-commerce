@@ -1,4 +1,4 @@
-const {UserModel} = require("../../Models/User.Model");
+const {UserModel} = require("../Models/User.Model");
 const bcrypt=require("bcrypt")
 const getdata = (req, res) => {
   res.send("signup logic");

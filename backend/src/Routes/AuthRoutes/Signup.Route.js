@@ -1,5 +1,5 @@
 const {Router}=require("express")
-const { SignupController } = require("../../Controller/SignupController/Signup.Controller")
+const { SignupController } = require("../../Controller/Signup.Controller")
 
 
 const SignupRouter=Router()

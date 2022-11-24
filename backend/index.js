@@ -1,7 +1,10 @@
 const express=require("express")
 const { connection } = require("./src/Config/db")
-const { LoginRouter } = require("./src/Routes/LoginRoute/Login.Route")
-const { SignupRouter } = require("./src/Routes/SignupRoute/Signup.Route")
+const { LoginRouter } = require("./src/Routes/AuthRoutes/Login.Route")
+const { SignupRouter } = require("./src/Routes/AuthRoutes/Signup.Route")
+const { DashboardRouter } = require("./src/Routes/DashboardRoutes/Dashboard.Route")
+const { ProductRouter } = require("./src/Routes/ProductRoutes/Product.Route")
+
 require("dotenv").config()
 
 
@@ -16,10 +19,11 @@ app.use(express.json())
 
 // --------------------------------------------
 
+
 app.use("/login",LoginRouter)
 app.use("/signup",SignupRouter)
-
-
+app.use("/dashboard",DashboardRouter)
+app.use("/product",ProductRouter)
 
 
 app.listen(Port,async()=>{
