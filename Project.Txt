@@ -1,0 +1,17 @@
+auth{
+    token:"
+    iserror:true/false
+    isloading:true/false
+}
+
+products:{
+  data:[]
+    iserror:true/false
+    isloading:true/false
+}
+
+Carts:{
+  data:[]
+    iserror:true/false
+    isloading:true/false
+}
